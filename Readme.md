@@ -1,16 +1,33 @@
 # Data Science Project
-The Automated Pneumonia Anomaly Detection Screener Using Artificial Intelligence is a research project aimed at developing a hybrid machine learning and deep learning model for diagnosing pneumonia from chest X-ray images. The project combines the visual feature extraction power of VGG16 Convolutional Neural Network (CNN) with the classification capability of a traditional machine learning algorithm, specifically a Random Forest (RF) classifier.
+This Automated Pneumonia Anomaly Detection Screener Using Artificial Intelligence is a research project aimed at developing a hybrid machine learning and deep learning model for diagnosing pneumonia from chest X-ray images. The project combines the visual feature extraction power of VGG16 Convolutional Neural Network (CNN) with the classification capability of a traditional machine learning algorithm, specifically a Random Forest (RF) classifier.
 The goal is to offer an efficient, accurate, and computationally affordable diagnostic tool suitable for deployment in healthcare systems with limited computational resources—particularly in remote or underdeveloped regions. The system automates pneumonia detection, minimizing human error, improving diagnostic speed, and supporting early medical intervention.
 
 
 ## Problem Statement
-- <a href="./deployment1.md">Application Deployment1 Notes (HTML SYNTAX)</a>
+Pneumonia remains one of the leading causes of mortality worldwide, especially among children under five and elderly populations. Traditional diagnosis using chest X-ray interpretation is manual, subjective, and prone to misdiagnosis due to the subtle visual similarities of pneumonia symptoms with other lung infections.
+Existing deep learning models (such as ResNet50, DenseNet201, and InceptionV3) have shown remarkable accuracy but are computationally intensive, requiring significant processing power and memory, which limits their practical use in low-resource medical environments.
+Therefore, there is a need for a lightweight, hybrid model that achieves high accuracy comparable to deep learning architectures while maintaining low computational cost and high generalizability across different datasets.
 
 ## 🛠 Tools Used
+Programming Language: Python
 
-### Documentation
+Deep Learning Frameworks: TensorFlow, Keras
 
-- [Application Deployment2 Notes (MARKDOWN SYNTAX)](./deployment2.md)
+Machine Learning Libraries: Scikit-learn
+
+Pre-trained CNN Model: VGG16 (feature extraction)
+
+Classifier: Random Forest (supervised learning)
+
+Image Processing and Visualization: OpenCV, Matplotlib, NumPy, Pandas
+
+Performance Metrics: Accuracy, Precision, Recall, F1-score, Sensitivity, Specificity
+
+Dataset: ChestX-ray14 and/or publicly available pneumonia X-ray datasets
+
+Hardware Environment: GPU-enabled system (for CNN feature extraction and model training)
+
+## Documentation
 
 Automated Pneumonia Anomaly Detection Screener Using Artificial Intelligence
 
@@ -20,7 +37,7 @@ CS628-154HY: Data Science
 Professor. Khadhirunissa Shaik
 October 20, 2025
 
- 
+
 
 
 
