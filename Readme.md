@@ -134,7 +134,8 @@ Hybrid model (VGG16–RF) heart disease use-case	91.3	92.2	91.8	92.2	91.8	92.0
 
 
 
-g.  Conclusions and Future Research Directions.
+### Conclusions and Future Research Directions.
+
 		In future work, this research can be expanded to other pre-trained CNNs to solve multi-classification problems. An additional layer of U-Net based architecture can be attached to the VGG16-RF model to form a simpler infrastructure of VGG16-UNet-RF. This integrates the feature extraction capabilities of the pretrained CNN into a U-Net-like encoder-decoder structure. The extracted features from the bottleneck layer or a pooling layer of the U-Net are then flattened and used to train a separate RF classifier layer. This will however require an understanding of deep learning for sophisticated convolution neural networks.
 
 
@@ -161,7 +162,7 @@ g.  Conclusions and Future Research Directions.
 
 
 
-References
+### References
 
 Rajpurkar, P., Irvin, J., Zhu, K., Yang, B., Mehta, H., Duan, T. and Ng, A. Y. (2018) CheXNet: Radiologist-Level Pneumonia Detection on Chest X-Rays with Deep Learning. arXiv: 1711.05225.
 D. Kermany, K. Zhang, and M. G. baum, “Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images for Classification”, 2018. [Online]Available:https://data.mendeley.com/datasets/rscbjbr9sj/2. 
