@@ -53,20 +53,22 @@ October 20, 2025
 
 
 
-a.	 Introduction and Objectives 
+### Introduction and Objectives 
+
 Pneumonia is a severe lung infection caused primarily by viruses or bacteria and is a major cause of global mortality, particularly among children and the elderly (Ortiz-Prado et la., 2025). According to the World Health Organization (WHO), pneumonia accounts for nearly 12.8% of annual deaths among children under five. Diagnosing pneumonia traditionally relies on the expert interpretation of chest X-rays (Thi Le et al., 2025). However, similar visual patterns for pneumonia in some X-ray images have often led to misdiagnosis, even by experienced radiologists, which has been an ongoing challenging concern for the healthcare industry.
 To address these challenges, this research aims to design an automated screening system for pneumonia anomaly detection using a model that relies on deep learning and machine learning combination infrastructure. The main objective of building such a hybrid model is that, although state of the art deep learning models provides superior performance in speed and accuracy, these models are computationally expensive because of their sophisticated architecture. On the other hand, a machine learning model alone is limited in visual prowess. Thus, this proposed hybrid model intends to bridge both worlds; accuracy, with affordability and accessibility for pneumonia detection (especially resource-limited healthcare in underdeveloped remote settings).
 
 
 
 
-b.	 Current State of Arts and Existing Methodologies
+###  Current State of Arts and Existing Methodologies
+
 Recent advances in improved medical image classification, prominently rely on Convolutional Neural Network architectures, such as VGG16, ResNet50, DenseNet201, InceptionV3, and MobileNetV2. These deep learning models have demonstrated success in pneumonia detection and other medical diagnostics. Rajpurkar et al. (2017) used a 121-layer CNN achieving performance exceeding human radiologists on ChestX-ray14 dataset; Kermany et al. (2018) achieved 92.8% accuracy using image-based deep learning for disease classification; Stephen et al. (2019) and Saraiva et al. (2019) proposed CNN models achieving accuracies around 93–95%; Liang and Zheng (2020) used a deep residual network with 49 layers, obtaining 90% accuracy but high computation cost; El Asnaoui et al. (2020) explored multiple CNN architectures, where ResNet50 and Inception-ResNet-V2 achieved over 96% accuracy. 
 While these models performed well, their limitations include large parameter counts (Rajpurkar et al., 2017), slow training (El Asnaoui et al., 2020), and high computational cost (Liang and Zheng, 2020), which can restrict decision margins.
 
  
 
-c.	 Concerns: Barriers, Issues, and Open Problems
+###  Concerns: Barriers, Issues, and Open Problems
 Despite substantial progress, existing methods face key challenges:
 •	Data scarcity and imbalance: Medical datasets are often limited and unevenly distributed across classes.
 •	Overfitting risks: Deep networks with limited medical data can easily overfit.
@@ -83,7 +85,8 @@ Despite substantial progress, existing methods face key challenges:
 
 
 
-d.	 Existing and Expected-Proposed Solutions and their Respective Methods and Algorithms 
+### Existing and Expected-Proposed Solutions and their Respective Methods and Algorithms 
+
 		Rajpurkar et al., (2017) presented an algorithm to detect pneumonia for chest X-ray images, where the authors assure that the performance of the proposed algorithm exceeds the practicing radiologists. The methodology relied on a CNN of 121 layers trained architecture with a softmax classification algorithm utilizing the set of images of ChestX-ray14, including more than 100,000 X-ray images with 14 diseases. However, with the large dataset, it suffered slow training and high computational cost. 
 			Kermany et al., (2018) proposed medical diseases diagnoses and treatment by utilizing image-based deep learning models to detect or classify several medical datasets including of the dataset utilized in this paper. Same method and algorithm as above but with comparatively lower dataset, performance of the proposed method was comparable to human specialists and achieved accuracy 92.8%. This paper enhanced the performance, but the drawback was it depend on lower-level features. 
 			Wua et al., (2020) proposed a hybrid model to predict pneumonia with chest X-ray images based on adaptive median filter convolutional neural network and random forest (RF) classification algorithm. The author used adaptive median filtering to remove noise in the chest X-ray image, which makes the image more easily identified and achieved high accuracy. Then CNN architecture with two layers is established based on dropout to extract features. Although the adaptive median filter can improve the classification accuracy of CNN, it needs additional preprocessing. 
@@ -92,7 +95,8 @@ d.	 Existing and Expected-Proposed Solutions and their Respective Methods and Al
 			This paper’s proposed solution aims to achieve cost-effectiveness with precision-efficiency by opting for a hybrid model that does not bring the overhead computational expense by trading-off some accuracy proficiency (Addisu et al., 2025). The methodology relies on a VGG-I6 CNN coupled with a Random Forest classification algorithm. Now, because Addisu et al focused on a heart disease use case, this pneumonia use case will need the hybrid model designed from scratch in order to measure performance metrices tailored to the pneumonia use case.
  
 
-e.	  Details and Expected Research Results (step by step illustrations, concepts, principles, theories, algorithms, methodologies, etc.) 
+### Details and Expected Research Results (step by step illustrations, concepts, principles, theories, algorithms, methodologies, etc.) 
+
 (Step-by-Step Process)
 1.	Input Data Preparation
 o	Collect and preprocess the dataset (resize images to 224×224, normalize pixel values, apply augmentation if necessary).
