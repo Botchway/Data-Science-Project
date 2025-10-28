@@ -1,5 +1,4 @@
 # Data Science Project
-
 The Automated Pneumonia Anomaly Detection Screener Using Artificial Intelligence is a research project aimed at developing a hybrid machine learning and deep learning model for diagnosing pneumonia from chest X-ray images. The project combines the visual feature extraction power of VGG16 Convolutional Neural Network (CNN) with the classification capability of a traditional machine learning algorithm, specifically a Random Forest (RF) classifier.
 The goal is to offer an efficient, accurate, and computationally affordable diagnostic tool suitable for deployment in healthcare systems with limited computational resources—particularly in remote or underdeveloped regions. The system automates pneumonia detection, minimizing human error, improving diagnostic speed, and supporting early medical intervention.
 
